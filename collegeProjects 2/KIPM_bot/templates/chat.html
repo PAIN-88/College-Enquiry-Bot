@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KIPM Smart AI Bot - Your College Guide</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+   <div class="chat-header">
+            <a href="https://www.kipm.edu.in/"> <img src="static/logo.png" class="logo" ></a>
+            <div class="status-indicator"></div>
+            <h1>🎓 KIPM Smart AI Bot</h1>
+            <p>Your Intelligent College Guide & Information Assistant</p>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">
+                    <div>
+                        <p><strong>Welcome to KIPM Smart AI Bot! 🎓</strong></p>
+                        <p>I'm your intelligent college guide with comprehensive information about:</p>
+                        <p>• 💰 <strong>Fee Structure</strong> - Complete cost breakdown for all courses</p>
+                        <p>• 🎓 <strong>Academic Programs</strong> - Engineering, Management, Pharmacy, Commerce</p>
+                        <p>• 💼 <strong>Career & Placements</strong> - Latest statistics, top recruiters</p>
+                        <p>• 🏢 <strong>Campus Facilities</strong> - Hostel, sports, library, transport</p>
+                        <p>• 📞 <strong>Contact & Support</strong> - Admission helpline, office locations</p>
+                        <p>• 🏆 <strong>Achievements</strong> - Rankings, awards, recognition</p>
+                        <p><br>Ask me anything specific or use the quick buttons below!</p>
+                    </div>
+                    <div class="message-time" id="welcomeTime"></div>
+                </div>
+            </div>
+        </div>
+ <div class="chat-input-container">
+ <div class="quick-questions">
+                <div class="quick-question" onclick="askQuestion('What is the fee structure?')">💰 Fee Structure</div>
+                <div class="quick-question" onclick="askQuestion('What courses does KIPM offer?')">🎓 Courses</div>
+                <div class="quick-question" onclick="askQuestion('Tell me about placements')">💼 Placements</div>
+                <div class="quick-question" onclick="askQuestion('What are the contact details?')">📞 Contact</div>
+                <div class="quick-question" onclick="askQuestion('What facilities are available?')">🏢 Facilities</div>
+            </div>
+  </div>
+    <div class="input-t">
+    <input type="text" id="message" placeholder="Type your queries..."  onkeydown="handleKeyPress(event)">
+    <button onclick="sendMessage()">Send</button>
+</div>
+      
+
+
+</body>
+<script src="static/script.js"></script>
+</html>
